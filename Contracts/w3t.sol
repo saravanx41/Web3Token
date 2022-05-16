@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  * If we implement them in Camp's constructor, they can be dynamic.
  * e.g.: constructor(string memory name_, string memory symbol_) ERC20(name_, symbol_) {}
  */
-contract Camp is ERC20("Web3Token", "W3T"), Ownable {
+contract web3token is ERC20("Web3Token", "W3T"), Ownable {
     /**
      * @dev We'll implement simple mint and burn functions for now, and then add more complexity on next steps.
      * Only the owner of the contract, which is the deployer by default (see: Ownable), is able to mint and burn.
